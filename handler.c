@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * handler - handles format
+ * handle_print - handles format
  *
  * @str: str fmt
  *

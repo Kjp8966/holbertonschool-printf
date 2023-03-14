@@ -55,14 +55,12 @@ int print_int(va_list ls)
 	char bfr[1024];
 	memset(bfr, 0, sizeof(bfr));
 	
-
 	if (nm == 0)
 	{
 		bfr[0] = '0';
 		write(1, bfr, 1);
 		return (1);
 	}
-
 	if (nm < 0)
 	{
 		lamb = -1;
@@ -74,13 +72,11 @@ int print_int(va_list ls)
 	{
 		lamb = 1;
 	}
-
 	for (i = 0; nm > 0; i++)
 	{
 		bfr[i] = '0' + (nm % 10);
 		nm /= 10;
 	}
-
 	if (lamb == -1)
 	{
 		ram = i + 1;
@@ -89,11 +85,9 @@ int print_int(va_list ls)
 	{
 		ram = i;
 	}
-
 	for (i = ram - 1; i >= 0; i--)
 	{
 		write(1, &bfr[i], 1);
 	}
-
 	return (ram);
 }

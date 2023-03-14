@@ -1,4 +1,5 @@
 #include "main.h"
+#include "string.h"
 
 /**
  * print_char - print char
@@ -50,8 +51,10 @@ int print_str(va_list ls)
 int print_int(va_list ls)
 {
 	int nm = va_arg(ls, int);
-	char bfr[1024];
 	int i, lamb, ram;
+	char bfr[1024];
+	memset(bfr, 0, sizeof(bfr));
+	
 
 	if (nm == 0)
 	{

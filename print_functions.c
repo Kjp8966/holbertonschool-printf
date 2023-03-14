@@ -32,7 +32,7 @@ int print_str(va_list ls)
 	char *goat;
 	int goat_len;
 
-	goat = va_arg(ls, char*);
+	goat = va_arg(ls, char *);
 	goat_len = (goat != NULL) ? _strlen(goat) : _strlen("(null)");
 
 	write(1, (goat != NULL) ? goat : "(null)", goat_len);
@@ -54,7 +54,7 @@ int print_int(va_list ls)
 	int i, lamb, ram;
 	char bfr[1024];
 	memset(bfr, 0, sizeof(bfr));
-	
+
 	if (nm == 0)
 	{
 		bfr[0] = '0';
@@ -63,9 +63,7 @@ int print_int(va_list ls)
 	}
 	if (nm < 0)
 	{
-		lamb = -1;
-		nm *= -1;
-		bfr[0] = '-';
+		lamb = -1, nm *= -1, bfr[0] = '-';
 		write(1, bfr, 1);
 	}
 	else

@@ -38,5 +38,25 @@ int main(void)
     len2 = printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
+	_printf("%d\n", 1024);
+	_printf("%d\n", INT_MAX);
+	_printf("%d\n", INT_MIN);
+	_printf("There is %d bytes in %d KB\n", 1024, 1);
+	_printf("%d - %d = %d\n", 1024, 2048, -1024);
+	_printf("%i\n", 1024);
+	_printf("%i\n", INT_MAX);
+	_printf("%i\n", INT_MIN);
+	_printf("There is %i bytes in %i KB\n", 1024, 1);
+	_printf("%i - %i = %i\n", 1024, 2048, -1024);
+	printf("%d\n", 1024);
+	printf("%d\n", INT_MAX);
+	printf("%d\n", INT_MIN);
+	printf("There is %d bytes in %d KB\n", 1024, 1);
+	printf("%d - %d = %d\n", 1024, 2048, -1024);
+	printf("%i\n", 1024);
+	printf("%i\n", INT_MAX);
+	printf("%i\n", INT_MIN);
+	printf("There is %i bytes in %i KB\n", 1024, 1);
+	printf("%i - %i = %i\n", 1024, 2048, -1024);
     return (0);
 }
